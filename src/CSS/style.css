@@ -1,0 +1,247 @@
+body{
+    background-color: rgb(218, 218, 218);
+    font-family: consolas;
+}
+.navBar .logo {
+	height: 35px;
+}
+.navBar .logo img {
+	height: 100%;
+}
+.navBar a {
+	text-decoration: none;
+    color: black;
+    padding-left: 1em;
+}
+.navBar a:hover {
+	transition: 0.3s;
+    transform: scale(1.15);
+}
+.navBar{
+    background-color: white;
+    border-radius: 15px;
+    height: 5rem;
+    margin: 1em 10px;
+    box-shadow: 5px 5px 10px #888888;
+}
+.navBar-right{
+    position: absolute;
+    right: 3rem;
+    top: 2.5rem;
+}
+.navBar-right-mobi{
+    position: absolute;
+    right: 0rem;
+    top: 2.3rem;
+    display: none;
+}
+.navBar-left{
+    padding-left: 1em;
+    display: flex;
+	align-items: center;
+	flex: 1;
+}
+.navBar-right button{
+    margin-right: 10px;
+    background: none;
+    text-decoration: none;
+}
+#home-btn{
+    border: none;
+    font-weight: bold;
+}
+#home-btn:hover{
+    transition: 0.3s;
+    transform: scale(1.4);
+}
+#add-blog-btn{
+    background-color: white; 
+    border: 2px solid #008CBA;
+    color: #008CBA;
+    font-weight: bold;
+    border-radius: 5px;
+    padding: 0.5em 1em;
+}
+#add-blog-btn:hover{
+    color: white;
+    background-color: #008CBA;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.card{
+    margin: 1em 1em;
+    background-color: white;
+    width: 18em;
+    padding-top: 1em;
+    display: inline-block;
+    border-radius: 10px;
+    padding-bottom: 2em;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+    border: solid 1px #CCC;
+    -moz-box-shadow: 1px 1px 5px #999;
+    -webkit-box-shadow: 1px 1px 5px #999;
+    box-shadow: 1px 1px 5px #999;
+}
+.card-image img{
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.card-header{
+    text-align: center;
+}
+.card-author{
+    text-align: center;
+}
+.card-btn{
+    text-align: center;
+}
+.card-btn button{
+    text-decoration: none;
+    text-align: center;
+    background: none;
+    padding: 5px 5px;
+    background-color: white; 
+    color: #008CBA; 
+    border: 2px solid #008CBA;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.card-btn button:hover {
+    background-color: #008CBA;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.main-page{
+    width: 90%;
+    margin-left: 5%;
+    display: inline-block;
+    text-align: center;
+}
+.new-blog form{
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    height: 460px;
+    text-align: center;
+    background-color: white;
+    border-radius: 20px;
+}
+.new-blog form label{
+    display: block;
+    padding: 1em;
+}
+.new-blog form button{
+    margin-top: 1.5em;
+    padding: 0.6em 1em;
+}
+.new-blog form input,textarea{
+    width: 200px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid black;
+}
+.new-blog form textarea{
+    height: 80px;
+}
+.content{
+    text-align: center;
+    margin-bottom: 2em;
+    margin-top: 2em;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+    width: 50%;
+    padding-top: 1em;
+    padding-bottom: 3em;
+    border-radius: 10px;
+}
+.content-author{
+    font-weight: bold;
+}
+.content-body{
+    padding: 0 1.5em;
+}
+.content-header h3 {
+	font-size: 40px;
+}
+.content-image img{
+    width: 92%;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+.content-btn{
+    display: absolute;
+    right: 2em;
+}
+.content-btn button{
+    text-align: center;
+    background: none;
+    padding: 0.5em 1em;
+    background-color: white; 
+    color: red; 
+    border: 2px solid red;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.content-btn button:hover {
+    background-color: red;
+    color: white;
+    transition: 0.3s;
+    transform: scale(1.2);
+}
+.mobi-nav button{
+    background: none;
+    border: none;
+}
+.mobi-nav a{
+    text-decoration: none;
+    font-weight: bold;
+}
+.mobi-nav ul{
+    list-style: none;
+    margin-top: 2em;
+    padding: 0.4em 0em;
+    padding-right: 1em;
+    padding-top: 0.8em;
+    margin-right: 1em;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+.mobi-nav ul li{
+    padding-bottom: 0.8em;
+}
+.mobi-nav li a:hover{
+    color: red;
+}
+.mobi-nav-btn{
+    position: absolute;
+    right:3em;
+    top: 0.2rem;
+    transform: scale(1.4);
+}
+
+@media screen AND (max-width:400px) {
+    .navBar-right{
+        display:flexbox;
+    }
+    .main-page{
+        display: block;
+    }
+    .new-blog form{
+        transform: scale(0.8);
+    }
+    .navBar-right{
+        display: none;
+    }
+    .navBar-right-mobi{
+        display: block;
+    }
+}
